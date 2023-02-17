@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="showcase">
+    <div class="videocontainer">
+        <video id="videobg" autoplay="true" loop="true" muted="false" src="video/working.mp4">
+            
+        </video>
+    </div>
+    <div class="content">
+        <h1>Code is very easy</h1>
+        <h3>Everyone must learn to code</h3>
+        <a href="#about" class="btn">Know more...</a>
+        <br>
+        <a href="#" class="btn" onclick="changevideobg(1)">1</a>
+        <a href="#" class="btn" onclick="changevideobg(2)">2</a>
+        <a href="#" class="btn" onclick="changevideobg(3)">3</a>
+        <a href="#" class="btn" onclick="changevideobg(4)">4</a>
+    </div>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus ducimus enim sint eos mollitia modi sunt architecto quos recusandae cum vero reprehenderit nesciunt, qui voluptates pariatur perferendis facilis voluptatum!</p>
+        
+        <h2>Follow on social media</h2>
+        <div class="social">
+            <a href=""><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-facebook fa-4x" aria-hidden="true"></i>
+            </a>
+            <a href=""><i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+            </a>
+            <a href=""><i class="fa fa-youtube fa-4x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+<script>
+ let vref = document.getElementById("videobg")
+        function changevideobg(n){
+            vref.setAttribute("src", "video/videobg"+n+".mp4")
+        }
+      
+
+</script>
+</body>
+</html>
